@@ -43,7 +43,7 @@ export const App = () => {
             <div>
               <input
                 type="number"
-                placeholder="Estatura em cm"
+                placeholder="Estatura em. Ex: 1.20"
                 value={heightField > 0 ? heightField : ""}
                 onChange={(e) => setHeightField(parseFloat(e.target.value))}
                 disabled={showInfo ? true : false}
@@ -56,7 +56,7 @@ export const App = () => {
             <div>
               <input
                 type="number"
-                placeholder="Peso em kg"
+                placeholder="Peso em kg. Ex 75.3"
                 value={weightField > 0 ? weightField : ""}
                 onChange={(e) => setWeightField(parseFloat(e.target.value))}
                 disabled={showInfo ? true : false}
