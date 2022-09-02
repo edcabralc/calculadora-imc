@@ -1,0 +1,177 @@
+:root {
+  --soft-blue: #f5f8fe;
+  --gray-border: #dcdcdc;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lexend Deca", sans-serif;
+  text-decoration: none;
+}
+
+a {
+  color: #717177;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: #eaeff0;
+}
+
+h1 {
+  margin-bottom: 1.2rem;
+  font-weight: 700;
+}
+
+h1::after {
+  contain: "";
+  width: 20px;
+  height: 20px;
+  background-color: red;
+  display: block;
+}
+
+.legend {
+  font-weight: 300;
+  margin-bottom: 2rem;
+  line-height: 1.3;
+  color: #8e8e9b;
+}
+
+.main {
+  max-width: 65rem;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px rgba(19, 19, 31, 0.05);
+  border-radius: 0.5rem;
+  font-size: 1.6rem;
+  padding: 4rem;
+}
+
+.form {
+  flex: 1;
+  display: flex;
+  gap: 1.5rem;
+  margin: 1.5rem 0;
+}
+
+.inputs {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.inputs div {
+  background-color: #fff;
+  border: 2px solid var(--gray-border);
+  padding: 1.6rem;
+  border-radius: 0.5rem;
+}
+
+.inputs input {
+  width: 100%;
+  border: 0;
+  color: #717177;
+  font-weight: 400;
+  outline: transparent;
+}
+
+.inputs input:disabled {
+  background-color: #fff;
+  opacity: 0.2;
+}
+
+.btn {
+  width: 100%;
+  background-color: #000;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.9);
+  padding: 1.6rem;
+  border-radius: 0.5rem;
+  border: 0;
+  cursor: pointer;
+  transition: all ease 0.5s;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.btn:hover {
+  opacity: 0.4;
+}
+
+.btn:disabled {
+  opacity: 0.2;
+}
+
+.itemsContainer {
+  flex: 1;
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(2, 1fr);
+  margin-bottom: 4rem;
+}
+
+.itemsContainer .itemResult {
+  grid-column: span 2;
+  gap: 1rem;
+}
+
+.btnBack {
+  grid-column: span 2;
+}
+
+.btnBack button {
+  width: 100%;
+  background-color: #fff;
+  border: 2px solid var(--gray-border);
+  padding: 1rem 0.5rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all ease 0.5s;
+
+  margin-top: 1rem;
+}
+
+.btnBack button:hover {
+  border: 2px solid #000;
+}
+
+.developedBy {
+  align-self: flex-end;
+}
+
+@media (max-width: 650px) {
+  body {
+    background-color: #fff;
+    width: 100%;
+  }
+
+  .main {
+    width: 100%;
+    box-shadow: none;
+    place-items: center;
+    padding: 2rem;
+  }
+
+  .itemsContainer {
+    width: 100%;
+    gap: 1rem;
+    grid-template-columns: 1fr;
+    margin-bottom: 2rem;
+  }
+
+  .itemResult {
+    gap: 1rem;
+  }
+}

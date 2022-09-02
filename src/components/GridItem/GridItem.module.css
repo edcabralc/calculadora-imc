@@ -1,0 +1,26 @@
+.item {
+  padding: 2rem;
+  border-radius: 0.5rem;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.iconContainer {
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 55px;
+  height: 55px;
+}
+
+.details p {
+  font-weight: 700;
+}
+
+.details p + p {
+  font-weight: 400;
+  margin-top: 0.5rem;
+}
