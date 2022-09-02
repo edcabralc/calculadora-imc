@@ -6,7 +6,7 @@ import {levels, calculateImc, Level} from "../src/helpers/imc";
 export const App = () => {
   const [heightField, setHeightField] = useState(0);
   const [weightField, setWeightField] = useState(0);
-  const [warning, setWarning] = useState(true);
+  const [warning, setWarning] = useState(false);
   const [showInfo, setShowInfo] = useState<Level | null>(null);
 
   const handleBackButton = () => {
